@@ -24,7 +24,7 @@ class UserRequest extends \Dick\CRUD\Http\Requests\CrudRequest {
 	{
 		return [
 			'name' => 'required|min:3|max:255',
-			'email' => 'required|email|min:3|max:255',
+			'email' => 'required|email|unique:users|min:3|max:255',
 			'password' => 'required|confirmed|min:4|max:255',
 		];
 	}
