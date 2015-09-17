@@ -19,6 +19,13 @@ All Notable changes to `Dick` will be documented in this file
 ### Security
 - Nothing
 
+
+## [0.7.3] - 2015-09-17
+
+### Fixed
+- User editing did not account for a use case: when editing a user, one should be able to change its password, and not see it's previous one's hash; Now it does;
+
+
 ## [0.7.2] - 2015-09-11
 
 ### Fixed

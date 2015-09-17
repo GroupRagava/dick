@@ -2,7 +2,7 @@
 
 use App\Http\Requests\Request;
 
-class UserRequest extends \Dick\CRUD\Http\Requests\CrudRequest {
+class UserUpdateRequest extends \Dick\CRUD\Http\Requests\CrudRequest {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -22,10 +22,12 @@ class UserRequest extends \Dick\CRUD\Http\Requests\CrudRequest {
 	 */
 	public function rules()
 	{
+		$user = \App\User::find(\Request::get('id'));
+
 		return [
 			'name' => 'required|min:3|max:255',
-			'email' => 'required|email|unique:users|min:3|max:255',
-			'password' => 'required|confirmed|min:4|max:255',
+			'email' => 'required|email|min:3|max:255|unique:users,email,'.\Request::get('id'),
+			'change_password' => 'confirmed|min:4|max:255'
 		];
 	}
 
