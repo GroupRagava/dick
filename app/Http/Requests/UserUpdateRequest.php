@@ -22,8 +22,6 @@ class UserUpdateRequest extends \Dick\CRUD\Http\Requests\CrudRequest {
 	 */
 	public function rules()
 	{
-		$user = \App\User::find(\Request::get('id'));
-
 		return [
 			'name' => 'required|min:3|max:255',
 			'email' => 'required|email|min:3|max:255|unique:users,email,'.\Request::get('id'),
