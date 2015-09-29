@@ -56,7 +56,7 @@ class UserController extends Controller {
 
 		// change the password
 		$user = User::findOrFail(\Auth::user()->id);
-		$user->password = bcrypt($request->input('new_password'));
+		$user->password = $request->input('new_password');
 		$user->save();
 
 		// set a success/error message

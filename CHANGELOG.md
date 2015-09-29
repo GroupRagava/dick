@@ -20,6 +20,11 @@ All Notable changes to `Dick` will be documented in this file
 - Nothing
 
 
+## [0.7.4] - 2015-09-17
+
+### Fixed
+- When a user tried to change his own password, the chosen password was bcryted twice; Fixed that and added the user role selection in User CRUD interface;
+
 ## [0.7.3] - 2015-09-17
 
 ### Fixed
