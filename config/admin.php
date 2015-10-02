@@ -13,6 +13,10 @@ return [
 	//
 	'language_ignore' => ['admin', 'pagination', 'reminders', 'validation', 'log', 'crud'],
 
+	// The AdminLTE Skin used (affects menu color and others)
+	// Options: skin-black, skin-blue, skin-green, skin-purple, skin-red, skin-yellow
+	// If you're using the left-side menu bar, you can have it light instead of dark by appending -light to the class. Ex: skin-blue-light
+	'skin' => 'skin-blue',
 
 	/*
 	|--------------------------------------------------------------------------

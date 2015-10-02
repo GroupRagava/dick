@@ -32,7 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="skin-blue layout-top-nav">
+  <body class="{{ config('admin.skin') }} layout-top-nav">
 
 	@if (Auth::guest())
 		{{-- <li><a href="{{ url('/auth/login') }}">Login</a></li>
