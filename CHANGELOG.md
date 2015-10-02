@@ -20,6 +20,15 @@ All Notable changes to `Dick` will be documented in this file
 - Nothing
 
 
+## [0.7.5] - 2015-10-02
+
+### Added
+- pick AdminLTE skin from config/admin.php
+
+### Fixed
+- AuthController used bcrypt() when creating a user; no need - that is now done in the Model using a mutator;
+
+
 ## [0.7.4] - 2015-09-17
 
 ### Fixed
