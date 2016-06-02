@@ -4,6 +4,13 @@
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/tabacitu/dick/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/tabacitu/dick.svg)](https://github.com/tabacitu/dick/issues)
 
+
+---------------------
+**THERE ARE BETTER THINGS THAN DICK**
+**The Dick project is no longer actively maintained. For important projects please use the new version: [Laravel Backpack](http://laravelbackpack.com).**
+---------------------
+
+
 Dick helps you kickstart your Laravel project, providing baseline code and interface for what any/many projects will need:
 - CRUD interface (client-friendly GUI for managing entities using Eloquent, inspired by Grocery Crud for CodeIgniter);
 - Authentication, user, role and permission management (using Laravel Auth & Entrust);
